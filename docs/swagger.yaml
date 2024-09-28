@@ -1,0 +1,29 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact:
+    email: tech.cod.mk13@gmail.com
+    name: API Support
+  description: Authentication system api documentation
+  license:
+    name: GNU General Public License v3.0
+    url: https://www.gnu.org/licenses/gpl.htm
+  title: Authentication System
+  version: "1.0"
+paths:
+  /api/v1:
+    get:
+      consumes:
+      - application/json
+      description: do ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: ping example
+      tags:
+      - Test
+swagger: "2.0"
