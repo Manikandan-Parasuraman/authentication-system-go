@@ -7,6 +7,7 @@ import (
 )
 
 func RouterInitiator(server *gin.Engine) {
+	server.POST("/user", UserRouter)
 	grouping := server.Group("/api/v1")
 	grouping.GET("/", getEvent)
 }
